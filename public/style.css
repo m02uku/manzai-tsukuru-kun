@@ -141,9 +141,12 @@ body::after {
     border: 5px solid #4169e1;
     border-radius: 20px;
     padding: 25px;
-    margin: 20px 0;
+    margin: 20px auto;
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.3);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* 装飾ライン */
@@ -155,6 +158,15 @@ body::after {
     font-size: 18px;
     margin-bottom: 15px;
     animation: slide 5s infinite linear;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+#gemini-form::before::-webkit-scrollbar {
+    display: none;
+}
 }
 
 @keyframes slide {
@@ -173,6 +185,9 @@ fieldset {
     padding: 20px;
     background: rgba(255, 255, 255, 0.7);
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 legend {
