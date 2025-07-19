@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Gemini API 応答サイト</title>
+    </head>
+    <body>
+        <h1>漫才スクリプト生成</h1>
+        <form id="gemini-form">
+            <fieldset>
+                <legend>必須項目</legend>
+                <label
+                    >参考にしたい漫才師:<br /><input
+                        type="text"
+                        id="ref-comedian"
+                        required /></label
+                ><br />
+                <label
+                    >漫才のテーマ:<br /><input type="text" id="theme" required /></label
+                ><br />
+            </fieldset>
+            <fieldset>
+                <legend>オプショナル項目</legend>
+                <label>漫才師Aの名前:<br /><input type="text" id="name-a" /></label
+                ><br />
+                <label>漫才師Bの名前:<br /><input type="text" id="name-b" /></label
+                ><br />
+                <label>
+                    コンビ名:<br /><input type="text" id="combination" />
+                </label><br />
+                <label
+                    >スタイル:
+                    <select id="style">
+                        <option value="">（未選択）</option>
+                        <option value="しゃべくり漫才">しゃべくり漫才</option>
+                        <option value="コント漫才">コント漫才</option>
+                    </select> </label
+                ><br />
+                <label
+                    >漫才師Aの役割:
+                    <select id="role-a">
+                        <option value="">（未指定）</option>
+                        <option value="ボケ">ボケ</option>
+                        <option value="ツッコミ">ツッコミ</option>
+                    </select>
+                </label>
+                <label
+                    >漫才師Bの役割:
+                    <select id="role-b">
+                        <option value="">（未指定）</option>
+                        <option value="ボケ">ボケ</option>
+                        <option value="ツッコミ">ツッコミ</option>
+                    </select> </label
+                ><br />
+                <label
+                    >口調・キャラクター:<br /><input
+                        type="text"
+                        id="character" /></label
+                ><br />
+                <label>ターゲット観客層:<br /><input type="text" id="audience" /></label
+                ><br />
+                <label
+                    >NGワード・避けたい話題:<br /><input
+                        type="text"
+                        id="ng-word" /></label
+                ><br />
+                <!-- オチのタイプ削除 -->
+                <label
+                    <!-- 構成項目削除 -->
+                <label
+                    >使用言語（e.g. 標準語、関西弁）:<br /><input
+                        type="text"
+                        id="language"
+                        placeholder="例: 標準語、関西弁、英語など" /></label
+                ><br />
+                <label
+                    >面白さの度合い（1-10）:<br /><input
+                        type="number"
+                        id="funny"
+                        min="1"
+                        max="10"
+                        placeholder="1~10" /></label
+                ><br />
+            </fieldset>
+            <button type="submit">漫才スクリプト生成</button>
+        </form>
+        <div id="response"></div>
+        <h2>生成履歴</h2>
+        <ul id="history"></ul>
+        <button id="download-btn" style="display: none">ダウンロード（txt）</button>
+        <script src="/static/main.js"></script>
+    </body>
+</html>
