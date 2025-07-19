@@ -524,7 +524,8 @@ body::after {
     ::-webkit-scrollbar {
         width: 10px;
     }
-    body::before, body::after {
+    body::before,
+    body::after {
         font-size: 11px;
         padding: 8px;
         margin: 0 5px;
@@ -603,7 +604,8 @@ body::after {
     ::-webkit-scrollbar {
         width: 7px;
     }
-    body::before, body::after {
+    body::before,
+    body::after {
         font-size: 9px;
         padding: 5px;
         margin: 0 2px;
