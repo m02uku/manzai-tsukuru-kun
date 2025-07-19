@@ -442,22 +442,170 @@ body::after {
 }
 
 /* レスポンシブ対応 */
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+        max-width: 100vw;
     }
-
     h1 {
         font-size: 16px;
-        padding: 15px;
+        padding: 10px;
+        margin: 10px 0;
+        border-width: 2px;
     }
-
     #gemini-form {
-        padding: 15px;
+        padding: 10px;
+        margin: 10px 0;
+        border-width: 3px;
     }
-
+    fieldset {
+        padding: 10px;
+        margin: 10px 0;
+        border-width: 2px;
+    }
+    legend {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    label {
+        font-size: 12px;
+        margin: 8px 0;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 12px;
+        padding: 8px;
+        max-width: 98vw;
+        width: 100%;
+    }
     button[type="submit"] {
+        font-size: 13px;
+        padding: 10px 18px;
+        margin: 15px auto;
+        border-width: 2px;
+    }
+    #response {
+        padding: 10px;
+        font-size: 12px;
+        min-height: 60px;
+        margin: 10px 0;
+        border-width: 2px;
+    }
+    #response::before {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    h2 {
         font-size: 14px;
-        padding: 12px 25px;
+        padding: 8px;
+        margin: 15px 0 10px 0;
+        border-width: 2px;
+    }
+    #history {
+        padding: 8px;
+        font-size: 12px;
+        max-height: 180px;
+        border-width: 2px;
+    }
+    #history li {
+        padding: 8px;
+        font-size: 12px;
+        margin: 5px 0;
+        border-width: 1.5px;
+    }
+    #download-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+        margin: 10px auto;
+        border-width: 2px;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    body::before, body::after {
+        font-size: 11px;
+        padding: 8px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 4px;
+        max-width: 100vw;
+    }
+    h1 {
+        font-size: 13px;
+        padding: 6px;
+        margin: 6px 0;
+    }
+    #gemini-form {
+        padding: 6px;
+        margin: 6px 0;
+    }
+    fieldset {
+        padding: 6px;
+        margin: 6px 0;
+    }
+    legend {
+        font-size: 11px;
+        padding: 4px 7px;
+    }
+    label {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 10px;
+        padding: 5px;
+        max-width: 98vw;
+        width: 100%;
+    }
+    button[type="submit"] {
+        font-size: 10px;
+        padding: 6px 10px;
+        margin: 8px auto;
+    }
+    #response {
+        padding: 6px;
+        font-size: 10px;
+        min-height: 40px;
+        margin: 6px 0;
+    }
+    #response::before {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    h2 {
+        font-size: 11px;
+        padding: 5px;
+        margin: 8px 0 5px 0;
+    }
+    #history {
+        padding: 5px;
+        font-size: 10px;
+        max-height: 100px;
+    }
+    #history li {
+        padding: 5px;
+        font-size: 10px;
+        margin: 3px 0;
+    }
+    #download-btn {
+        font-size: 10px;
+        padding: 5px 8px;
+        margin: 5px auto;
+    }
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+    body::before, body::after {
+        font-size: 9px;
+        padding: 5px;
+        margin: 0 2px;
     }
 }
