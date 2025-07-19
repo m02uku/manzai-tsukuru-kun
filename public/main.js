@@ -17,7 +17,7 @@ let lastScript = "";
 
 document.getElementById("gemini-form").addEventListener("submit", async function (e) {
     e.preventDefault();
-    // 必須項目取得
+    // 絶対決める項目取得
     const refComedian = document.getElementById("ref-comedian").value.trim();
     const nameA = document.getElementById("name-a").value.trim();
     const nameB = document.getElementById("name-b").value.trim();
@@ -25,10 +25,10 @@ document.getElementById("gemini-form").addEventListener("submit", async function
     // バリデーション（漫才師名はオプショナルに変更）
     if (!refComedian || !theme) {
         document.getElementById("response").textContent =
-            "必須項目（参考漫才師・テーマ）をすべて入力してください。";
+            "絶対決める項目（参考漫才師・テーマ）をすべて入力してください。";
         return;
     }
-    // オプショナル項目取得
+    // 決めたければ決める項目取得
     const combination = document.getElementById("combination").value.trim();
     const style = document.getElementById("style").value;
     const roleA = document.getElementById("role-a").value;

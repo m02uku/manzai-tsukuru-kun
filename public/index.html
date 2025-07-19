@@ -2,13 +2,13 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <title>Gemini API 応答サイト</title>
+        <title>まんざいつくるくん</title>
     </head>
     <body>
-        <h1>漫才スクリプト生成</h1>
+        <h1>まんざいつくるくん</h1>
         <form id="gemini-form">
             <fieldset>
-                <legend>必須項目</legend>
+                <legend>絶対決める項目</legend>
                 <label
                     >参考にしたい漫才師:<br /><input
                         type="text"
@@ -20,7 +20,7 @@
                 ><br />
             </fieldset>
             <fieldset>
-                <legend>オプショナル項目</legend>
+                <legend>決めたければ決める項目</legend>
                 <label>漫才師Aの名前:<br /><input type="text" id="name-a" /></label
                 ><br />
                 <label>漫才師Bの名前:<br /><input type="text" id="name-b" /></label
@@ -82,10 +82,10 @@
                         placeholder="1~10" /></label
                 ><br />
             </fieldset>
-            <button type="submit">漫才スクリプト生成</button>
+            <button type="submit">つくって！</button>
         </form>
         <div id="response"></div>
-        <h2>生成履歴</h2>
+        <h2>履歴</h2>
         <ul id="history"></ul>
         <button id="download-btn" style="display: none">ダウンロード（txt）</button>
         <script src="/static/main.js"></script>
