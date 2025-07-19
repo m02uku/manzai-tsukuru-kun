@@ -1,6 +1,6 @@
-# まんざいつくるくん
+# まんざいつくるくんベータ
 
-[まんざいつくるくん](https://manzai-tsukuru-kun.onrender.com/)
+[まんざいつくるくんベータ](https://manzai-tsukuru-kun.onrender.com/)
 
 ## 概要
 Google Gemini APIを使い、1回の入力に対して応答を返すシンプルなWebサイトです。
